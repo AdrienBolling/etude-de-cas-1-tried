@@ -1,0 +1,6 @@
+To remove all unecessary rows and have 9 columns of inputed data use the below
+
+
+columns = ['Unnamed: 0','Chlorophyll a, total', 'Divinyl chlorophyll a', 'Chlorophyll b', '19-Hexanoyloxyfucoxanthin', '19-Butanoyloxyfucoxanthin', 'Fucoxanthin','Peridinin', 'Alloxanthin', 'Zeaxanthin']
+
+df10 = pd.read_csv('data_globale_imputed.csv',dtype = {'a': np.float64},names = columns ).drop('Unnamed: 0',axis = 1)
